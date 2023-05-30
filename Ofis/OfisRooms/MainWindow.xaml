@@ -1,0 +1,53 @@
+﻿<Window x:Class="OfisRooms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,7">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="412*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="28,37,613,151" Background="#FFD68FA1">
+            <Label Content="Помещение" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="ширина" HorizontalAlignment="Left" Margin="0,71,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBLengthR" HorizontalAlignment="Left" Margin="69,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+            <TextBox x:Name="TBWidthR" HorizontalAlignment="Left" Margin="69,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+
+        </Grid>
+        <Grid Margin="203,37,438,151" Background="#FFC4A0CC">
+            <Label Content="Жилое помещение" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="длина" HorizontalAlignment="Left" Margin="0,41,0,0" VerticalAlignment="Top"/>
+            <Label Content="ширина" HorizontalAlignment="Left" Margin="0,71,0,0" VerticalAlignment="Top"/>
+            <Label Content="Число окон" HorizontalAlignment="Left" Margin="0,97,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBLengthL" HorizontalAlignment="Left" Margin="69,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+            <TextBox x:Name="TBWidthL" HorizontalAlignment="Left" Margin="69,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+            <TextBox x:Name="TBNumW" HorizontalAlignment="Left" Margin="78,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        </Grid>
+        <Grid Margin="384,37,257,151" Background="#FF90A3D4">
+            <Label Content="Офис" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="ширина" HorizontalAlignment="Left" Margin="0,71,0,0" VerticalAlignment="Top"/>
+            <Label Content="длина" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top"/>
+            <Label Content="Число розеток" HorizontalAlignment="Left" Margin="0,97,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBLengthO" HorizontalAlignment="Left" Margin="69,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+            <TextBox x:Name="TBNumS" HorizontalAlignment="Left" Margin="96,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="58"/>
+            <TextBox x:Name="TBWidthO" HorizontalAlignment="Left" Margin="69,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        </Grid>
+        <Grid Margin="574,37,24,151" Background="#FFF1DEA1">
+            <Label Content="Список помещений" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="ListRooms" Content="" HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top" Height="151" Width="182"/>
+        </Grid>
+        <Label Content="длина" HorizontalAlignment="Left" Margin="28,76,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BAddRoom" Content="Добавить" HorizontalAlignment="Left" Margin="86,327,0,0" VerticalAlignment="Top" Click="BAddRoom_Click"/>
+        <Button x:Name="BAddLivingRoom" Content="Добавить" HorizontalAlignment="Left" Margin="263,322,0,0" VerticalAlignment="Top" Click="BAddLivingRoom_Click"/>
+        <Button x:Name="BAddOffice" Content="Добавить" HorizontalAlignment="Left" Margin="424,322,0,0" VerticalAlignment="Top" Click="BAddOffice_Click"/>
+        <Button x:Name="aGetList" Content="Выдать" HorizontalAlignment="Left" Margin="622,322,0,0" VerticalAlignment="Top" Click="aGetList_Click"/>
+
+
+
+
+    </Grid>
+</Window>
